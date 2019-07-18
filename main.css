@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page_wrapper {
+    width: 100%;
+    position: relative;
+    display: grid;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    background-image: url(images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 50%;
+    grid-template-columns: 1fr;
+
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+}
+
+nav img {
+    width: 30%;
+    margin-left: 10%;
+    /* justify-self: center; */
+}
+
+.sign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    font-size: small;
+}
+
+.signIn {
+    justify-self: end;
+    padding: 5%;
+    line-height: 2;
+}
+
+.signUp {
+    justify-self: center;
+    background-color: hsl(163, 95%, 43%);
+    border-radius: 2px;
+    text-align: center;
+    padding: 5%;
+    width: 15vw;
+    line-height: 2;
+    margin-left: 10%;
+}
+
+.hero_header {
+    display: grid;
+    grid-row-gap: 5%;
+    text-align: start;
+    /* grid-column: 1; */
+    padding: 10% 5%
+        /*grid-column: 1;*/
+}
+
+.hero_header p,
+h1 {
+    margin: 5% 10%;
+    text-align: start;
+}
+
+.getStarted {
+    margin-left: 10%;
+}
+
+img.mainImg {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+input.btnGetStarted {
+    font-size: x-large;
+    width: 50%;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(163, 95%, 43%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20%;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.allDevices img {
+    margin-bottom: 5%;
+}
+
+.allDevices img:hover {
+    transform: scale(1.2);
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transition-duration: 0.2s;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.appContent h4 {
+    margin-top: 5%;
+}
+
+section.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* row-gap: 10%; 
+    margin-bottom: 10%;
+    */
+}
+
+.stayProductive h2 {
+    margin-bottom: 5%;
+}
+
+.stayProductive p {
+    padding-bottom: 5%;
+    font-weight: 400;
+}
+
+.sign a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.sign a:focus {
+    color: blue;
+}
+
+p {
+    font-size: large;
+}
+
+.allDevices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* row-gap: 10%;*/
+}
+
+section.apps {
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    /* row-gap: 10%; */
+    margin-top: 20%;
+}
+
+.connectedApps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    margin-right: 5%;
+}
+
+.allApps {
+    border: 1px solid hsl(0, 0%, 50%);
+    width: 100%;
+    margin: 5% auto;
+    height: 30vw;
+}
+
+section.apps img {
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.appContent {
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 50%);
+}
+
+.gsuite,
+.salesForce {
+    margin-top: -10%;
+}
+
+section.callToSign {
+    margin: 5% 25%;
+    display: grid;
+    grid-row-gap: 20%;
+}
+
+.heroApps {
+    margin-top: 25vw;
+}
+
+section.apps h2 {
+    margin: 5% 10%;
+    /*font-size: large;*/
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vw;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+footer img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+h1,
+p {
+    text-align: center;
+    margin: 5%;
+    font-family: "Raleway", sans-serif;
+   /* font-weight: 700;*/
+}
+
+footer p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.btnText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inputText {
+    margin: 5% 10%;
+    width: 80%;
+    justify-self: end;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 4vw;
+    font-size: xx-large;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    background-color: rgb(155, 155, 67);
+}
+
+.inputBtnJoin {
+    width: 90%;
+    /* justify-self: end;*/
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+input.btnJoin {
+    width: 100%;
+    height: 4vw;
+    font-size: x-large;
+}
+
+input.btnGetStarted,
+input.btnJoin {
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(163, 95%, 43%);
+}
+
+.phone,
+.email {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 10%;
+}
+
+.products,
+.aboutUs,
+.support {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 11%;
+    row-gap: 20%;
+    margin-left: 5%;
+}
+
+.details a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.details h4 {
+    font-size: large;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 655px) {
+
+    input.btnGetStarted,
+    input.btnJoin {
+        font-size: medium;
+    }
+
+    header {
+        background-size: 70%;
+
+    }
+
+    .sign a {
+        font-size: medium;
+    }
+
+    .details {
+        justify-items: center;
+    }
+
+    .connectedApps {
+
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
+        margin: 5%;
+    }
+
+    .allApps {
+        height: 50vw;
+        margin: 0;
+    }
+
+    section.apps {
+        margin-bottom: 20%;
+        grid-template-columns: 1fr;
+    }
+
+    .gsuite,
+    .salesForce {
+        margin-top: 0;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        margin-top: 15vw;
+        padding-bottom: 20%;
+    }
+
+    .heroApps {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+
+    .sign a {
+        font-size: small;
+    }
+
+    .details h4 {
+        font-size: small;
+    }
+
+    #page_wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
+        /* overflow: hidden;*/
+
+    }
+
+
+    header {
+        width: 100%;
+        background-image: url(images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 70%;
+        grid-template-columns: 1fr;
+    }
+
+    .heroApps {
+        margin-top: 0;
+    }
+
+    nav {}
+
+    .headerContent {
+        grid-template-columns: 1fr;
+    }
+
+    nav img {
+        width: 50%;
+        /* margin-left: 10%;
+        justify-self: center; */
+    }
+
+    .sign {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        font-size: small;*/
+    }
+
+
+    .signUp {
+        width: 25vw;
+        height: 10vw;
+        /* background-color: hsl(163, 95%, 43%);
+        border-radius: 2px;
+        text-align: center;
+        padding: 5%;
+        width: 100px;*/
+    }
+
+    .signIn {
+        padding: 5%;
+    }
+
+    img.mainImg {
+        width: 80%;
+        margin: 25% auto 5%;
+        grid-row: 1;
+        padding-bottom: 0;
+    }
+
+    .hero_header {
+        /*grid-row-gap: 5%;*/
+        grid-row: 2;
+    }
+
+    .hero_header p {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    h1,
+    p {
+        font-weight: 400;
+        /*
+        text-align: center;
+        margin: 5%;
+        
+        */
+    }
+
+    .getStarted {
+        width: 75%;
+        text-align: center;
+        margin: auto;
+    }
+
+    input.btnGetStarted,
+    input.btnJoin {
+        font-size: medium;
+        width: 100%;
+        height: 40px;
+        color: white;
+        border-radius: 5px;
+        background-color: hsl(163, 95%, 43%);
+    }
+
+    main {
+        /* display: grid;*/
+        grid-template-columns: 1fr;
+        row-gap: 5%;
+        margin-top: 0;
+        /*  text-align: center;
+        font-weight: 400; */
+    }
+
+    section.hero {
+        /*  display: grid;*/
+        grid-template-columns: 1fr;
+        /*row-gap: 10%;*/
+        margin-bottom: 10%;
+    }
+
+    section.apps {
+        /*display: grid;*/
+        grid-template-columns: 1fr;
+        /* row-gap: 10%;*/
+        margin-top: 20%;
+    }
+
+    section.apps img {
+        width: 40%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .allApps {
+        width: 60%;
+        margin: 5% auto;
+        height: 70vw;
+    }
+
+    .stayProductive h2 {
+        font-size: large;
+        margin: 5% 20%;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .allDevices {
+        /* display: grid;*/
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .callToSign h2 {
+        font-size: medium;
+    }
+
+    .allDevices img {
+        width: 30%;
+    }
+
+    .allDevices h3 {
+        margin: 5% 20%;
+        font-size: medium;
+    }
+
+    section.apps h2 {
+        margin: 5% 10%;
+        font-size: large;
+    }
+
+    .appContent {
+        /*width: 100%;
+        border-top: 1px solid hsl(0, 0%, 50%);*/
+    }
+
+    .connectedApps {
+        grid-template-columns: 1fr;
+    }
+
+    section.callToSign {
+        margin: -5% 0 5%;
+    }
+
+    footer {
+        margin-top: 50vw;
+        /*
+        display: grid;              
+        background-color: hsl(243, 87%, 12%);
+*/
+        grid-template-columns: 1fr;
+        color: white;
+        height: 100%;
+        padding-bottom: 40%;
+    }
+
+    footer img {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+
+    footer p {
+        /*text-align: left;*/
+    }
+
+    input[type="text"] {
+        width: 100%;
+        height: 8vw;
+
+    }
+
+    input.btnJoin {
+        width: 100%;
+        height: 8vw;
+    }
+
+    .btnText {
+        /*display: grid;*/
+        grid-template-columns: 1fr;
+    }
+
+    .inputBtnJoin {
+        width: 50%;
+        justify-self: end;
+        margin-right: 10%;
+    }
+
+    .inputText {
+        margin: 5% 10%;
+        width: 80%;
+        justify-self: end;
+    }
+
+    .phone {
+        margin-top: 10%;
+    }
+
+    .phone,
+    .email {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        margin-left: 10%;
+    }
+
+    .details {
+        /*  display: grid;*/
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .details a {
+        text-decoration: none;
+        color: white;
+        font-size: x-small;
+    }
+
+    .products,
+    .aboutUs,
+    .support {
+        /*
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 11%;
+        row-gap: 10%;
+        margin-left: 5%;*/
+    }
+
+}
